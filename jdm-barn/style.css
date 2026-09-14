@@ -1,4 +1,8 @@
-header {
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
     background-color: #f5f5f5;
     position: fixed;
     top: 0;
@@ -8,11 +12,36 @@ header {
 
     border-bottom: 1px solid #DDD9CE;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    padding-block: 30px;
 }
 body {
     margin: 0;
     padding-top: 75px;
 }
-nav {
-    text-align: right;
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_header {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+.header_container {
+    margin-inline: auto;
+}
+.header_list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+
+}
+a {
+    text-decoration: none;
+}
+.nav_link{
+    font-family: "Raleway";
+    align-items: center;
 }
